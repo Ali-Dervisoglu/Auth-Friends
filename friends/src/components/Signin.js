@@ -23,6 +23,7 @@ function Signin(props) {
             .then(result => {
                 console.log(result.data)
                 localStorage.setItem("token", result.data.token)
+                props.history.push("/friendslist")
             })
             .catch(err => {
                 setError(err.response.data.message)
