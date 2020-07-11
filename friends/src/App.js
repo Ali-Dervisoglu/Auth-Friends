@@ -4,6 +4,7 @@ import Signin from "./components/Signin"
 import { BrowserRouter, Link, Route } from "react-router-dom"
 import { getToken } from "./utils/getToken"
 import FriendsList from "./components/FriendsList";
+
 import ProtectedRoute from "./ProtectedRoute"
 
 function App() {
