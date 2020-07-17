@@ -22,7 +22,7 @@ function Signin(props) {
         axios.post("http://localhost:5000/api/login", data)
             .then(result => {
                 console.log(result.data)
-                localStorage.setItem("token", result.data.token)
+                localStorage.setItem("token", result.data.payload)
                 props.history.push("/friendslist")
             })
             .catch(err => {
